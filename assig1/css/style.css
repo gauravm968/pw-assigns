@@ -1,0 +1,91 @@
+:root{
+    --textcolor: #ffc233;
+    --btnbg: #ff505f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Red Rose', cursive;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/bg.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;    
+    margin: 15px;
+}
+
+.links ul{
+    display:flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    font-weight: 400;  
+    font-size: 15px;
+}
+
+.logo img{
+    width:150px
+/*    change image black into white    */
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+li a{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.btn button{
+    padding: 11px 30px;
+    background-color: var(--btnbg);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+main{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-heading h1{
+    font-weight: bolder;
+    font-size: 70px;
+    color: var(--textcolor);
+}
+
+#main-btn{
+    background-color: var(--btnbg);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 17px 50px;
+    margin-top: 23px;
+    cursor:pointer;
+    border-radius: 1px;
+}
+
+#scroll img{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
