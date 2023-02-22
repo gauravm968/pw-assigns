@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body{
+    background-color: #f0f4f5;
+/*    overflow: hidden;*/
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 60px;
+}
+
+nav img{
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    padding-right: 55px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+form{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    width: 25.5vw;
+    height: 62vh;
+    margin: auto;
+    margin-top: 96px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+/*    padding: 0 20px;*/
+    margin-top: 5px;
+    gap: 5px;
+}
+label{
+    align-self: flex-start;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.form-fields input{
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+.form-fields textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: #20BC7E;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 123px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}

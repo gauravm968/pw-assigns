@@ -1,0 +1,414 @@
+:root{
+    --btncolor: #6663e9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope";
+}
+
+body{
+    background-color: #f6f8fa;
+}
+
+/* --------- footer --------- */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Photos/mainBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-attachment: fixed;*/
+    background-position: center;
+    height: 125vh;
+}
+
+.main-logo{
+    width: 120px;
+    height: 45px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 430px;
+    padding: 25px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#line{
+    width: 1150px;
+    height: 1px;
+    background-color: whitesmoke;
+}
+
+.intro{
+    width: 700px;
+    margin: 90px 150px;
+}
+.intro h1{
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+}
+.intro p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 400px;
+    margin-top: 30px;
+}
+.intro button{
+    background-color: var(--btncolor);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 29px;
+    cursor: pointer;
+}
+.intro button:hover{
+    color: var(--btncolor);
+    background-color: white;
+}
+
+/* logos section */
+#logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1260px;
+    height: 190px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    bottom: 95px;
+    left: 45px;
+}
+
+/* Best estate section (Estate cards) */
+.estate-card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estate-card-h{
+    width: 500px;
+    text-align: center;
+}
+.estate-card-h>h1{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.card img{
+    width: 362px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.estate-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 54px;
+    margin-top: 90px;
+}
+
+.card-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 326px;
+    height: 120px;
+    padding: 0 22px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 120px rgba(58, 86, 78, 0.2);
+    position: relative;
+    left: 18px;
+    bottom: 70px;
+}
+.left-detail>h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.left-detail>p{
+    color: #6663e8;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.card-detail button{
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    background-color: var(--btncolor);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card{
+    position: relative;
+}
+
+.card:nth-child(2){
+    top: 30px;
+}
+.card:nth-child(3){
+    top: 60px;
+}
+.card:nth-child(5){
+    top: 30px;
+}
+.card:nth-child(4){
+    top: 60px;
+}
+.card:nth-child(8){
+    top: 30px;
+}
+.card:nth-child(9){
+    top: 60px;
+}
+
+
+/*  Book section (Feature section)  */
+.book-section{
+    margin-top: 120px;
+    height: 168vh;
+/*
+    border: 2px solid red;
+    overflow: hidden;
+*/
+}
+.first-book{
+    display: flex;
+    padding-top: 50px;
+}
+.left-book-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+#frame-1{
+    width: 560px;
+}
+
+#frame-img-1{
+    width: 402px;
+    height: 400px;
+    border-radius: 50px;
+    position: relative;
+    left: 110px;
+    bottom: 507px;
+}
+
+.right-book-1{
+    position: relative;
+    left: 140px;
+    top: 50px;
+    height: 400px;
+}
+.book-h{
+    font-size: 60px;
+    font-weight: 800;
+    width: 500px;
+}
+.book-desc{
+    color: #585c65;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 28px;
+    width: 438px;
+}
+.book-btn{
+    padding: 11px 33px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--btncolor);
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 33px;
+}
+.book-btn:hover{
+    color: var(--btncolor);
+    background-color: white;
+    border: 1px solid black;
+}
+/* --- */
+.sec-book{
+    display: flex;
+    position: relative;
+    bottom: 260px; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+#frame-2{
+    width: 725px;
+    height: 450px;
+}
+
+#frame-img-2{
+    width: 402px;
+    height: 400px;
+    border-radius: 50px;
+    position: absolute;
+    right: 138px;
+    bottom: 108px;
+    
+}
+.right-book-2{
+    display: flex;
+}
+.left-book-2{
+    position: relative;
+    left: 55px;
+    top: 13px;
+}
+
+/* Subscribe section */
+.subscribe-section{
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-section>#inner-sub-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6663e9;
+    width: 1210px;
+    height: 470px;
+    border-radius: 70px;
+/*    padding: 50px;*/
+    margin: 40px 0;
+}
+
+.subscribe-section h1{
+    color: white;
+    font-size: 61px;
+    font-weight: 800;
+    width: 900px;
+    text-align: center;
+}
+.subscribe-section p{
+    color: white;
+    font-size: 18px;
+    width: 670px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.email-subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 23px;
+    width: 640px;
+}
+.email-subscribe>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 25px;
+}
+.subscribe-section img{
+    position: relative;
+    left: 48px;
+}
+.subscribe-section input{
+    background-color: #5654d1;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 190px;
+    border-radius: 30px;
+}
+.subscribe-section button{
+    color: var(--btncolor);
+    padding: 20px 42px;
+    border-radius: 80px;
+    border: none;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/*  footer section  */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 110px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.left-footer{
+}
+.left-footer img{
+    width: 150px;
+}
+.social-logos ul{
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    margin-top: 20px;
+}
+.social-logos ul li a img{
+    width: 45px;
+}
+.left-footer p{
+    font-size: 21px;
+    width: 340px;
+    margin-top: 20px;
+}
+
+.right-footer{
+    display: flex;
+    gap: 122px
+}
+
+.right-footer ul{
+    list-style: none;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.right-footer h3{
+    font-size: 19px;
+}
+.right-footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
