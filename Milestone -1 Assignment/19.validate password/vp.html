@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Password</title>
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont{
+            height: 270px;
+            width: 340px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 0 0 5px black;
+            border-radius: 10px;
+        }
+         #btn{
+            cursor: pointer;
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        #btn:hover{
+            cursor: pointer;
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            color: aqua;
+            background-color: black;
+            border: 1px solid aqua;
+            font-size: 20px;
+        }
+        label{
+            font-size: 20px;
+        }
+        #res{
+            font-size: 20px;
+        }
+        form{
+            height: 260px;
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            margin: 2px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h2>Login Form</h2>
+        <form>
+        <label for="email">Enter Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email">
+
+        <label for="password">Enter Password</label>
+        <input type="password" id="pass" name="password" placeholder="Enter Password">
+
+        <input type="button" id="btn" value="Submit">
+        <p id="res"></p>
+    </form>
+    </div>
+
+    <script src="./vp.js"></script>
+</body>
+</html>

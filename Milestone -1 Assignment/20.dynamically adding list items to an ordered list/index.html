@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding List</title>
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont{
+            height: 200px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 0 0 5px black;
+            border-radius: 10px;
+        }
+        #btn{
+            cursor: pointer;
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        #btn:hover{
+            cursor: pointer;
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            color: aqua;
+            background-color: black;
+            border: 1px solid aqua;
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+    <div class="cont">
+    <ol id="list"></ol>
+    <button id="btn">Click</button>
+    </div>
+    <script src="./listitems.js"></script>
+</body>
+</html>

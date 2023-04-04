@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize</title>
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            height: 120px;
+            width: 240px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 0 0 5px black;
+            border-radius: 10px;
+        }
+        #btn{
+            cursor: pointer;
+            height: 40px;
+            width: 160px;
+            border-radius: 10px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        #btn:hover{
+            cursor: pointer;
+            height: 40px;
+            width: 160px;
+            border-radius: 10px;
+            color: aqua;
+            background-color: black;
+            border: 1px solid aqua;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="name1" placeholder="Enter name">
+        <input type="text" id="name2" placeholder="Enter name">
+        <input type="button" id="btn" value="Submit" onclick="capCheck()">
+    </form>
+
+    <script src="./cap.js"></script>
+</body>
+</html>

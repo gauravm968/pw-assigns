@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password validator</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            border: 1px solid gray;
+            border-radius: 20px;
+            width: 370px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        #submitbtn{
+            border: 1px solid;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: aqua;
+            color: black;
+            padding: 5px 20px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        #submitbtn:hover{
+            border: 1px solid;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: black;
+            color: aqua;
+            padding: 5px 20px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        span{
+            font-size: 20px;
+            padding-right: 10px;
+        }
+        input{
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .i{
+            margin-top: 10px;
+            width: 370px;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="i"><span>Enter Password</span><input type="password" placeholder="Enter Password" id="pw1"></div>
+        <div class="i"><span>Confirm Password</span><input type="password" placeholder="Confirm Password" id="pw2"></div>
+        <input type="submit" id="submitbtn" value="Submit" onclick="checkPass()">
+    </div>
+
+    
+    <script src="./pv.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Page</title>
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont{
+            height: 250px;
+            width: 340px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 0 0 5px black;
+            border-radius: 10px;
+        }
+         #btn{
+            cursor: pointer;
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        #btn:hover{
+            cursor: pointer;
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            color: aqua;
+            background-color: black;
+            border: 1px solid aqua;
+            font-size: 20px;
+        }
+        #cost{
+            font-size: 25px;
+            color: red;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <label>Enter number of days for Rent car </label>
+        <input type="number" id="num" placeholder="Enter Days">
+
+        <label>Select car type</label>
+        <select name="Select car type" id="type">
+            <option value="Economy">Economy</option>
+            <option value="Midsize">Midsize</option>
+            <option value="Luxury">Luxury</option>
+        </select>
+
+        <input type="button" id="btn" value="Show Rental Car Cost" onclick="showCost()">
+        <span id="cost"></span>
+    </div>
+
+    <script src="./rc.js"></script>
+</body>
+</html>

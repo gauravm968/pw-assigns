@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-container{
+            height: 450px;
+            width: 350px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 0 0 5px black;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 350px;
+            position: fixed;
+            width: 340px;
+        }
+        input{
+            outline: none;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            width: 330px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        #btn{
+            cursor: pointer;
+            height: 35px;
+            width: 130px;
+            border-radius: 10px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        #btn:hover{
+            cursor: pointer;
+            height: 35px;
+            width: 130px;
+            border-radius: 10px;
+            color: aqua;
+            background-color: black;
+            border: 1px solid aqua;
+            font-size: 20px;
+        }
+        #list{
+            width: 300px;
+            height: 340px;
+            margin-top: 110px;            
+        }
+        </style>
+</head>
+<body>
+    <div class="main-container">
+    <div class="container">
+    <input type="text" id="inp">
+    <button id="btn">Create</button>
+    </div>
+    <ol id="list">
+
+    </ol>
+    </div>
+    <script src="./tda.js"></script>
+</body>
+</html>
