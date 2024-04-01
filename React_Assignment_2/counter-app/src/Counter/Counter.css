@@ -1,0 +1,32 @@
+
+.counterBox {
+    height: 400px;
+    width: 450px;
+    background-color: #052161;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 8px 12px #000000;
+}
+
+.counterBox p {
+    margin-top:10px;
+    font-size: 4.5rem;
+
+}
+
+button {
+    background-color: #c8c8c8;
+    border-radius: 12px;
+    border: none;
+    padding: 14px 20px;
+    margin: 15px;
+    font-size: 1.3rem;
+}
+button:hover{
+    background-color: #8d8e8e;
+    cursor: pointer;
+}
